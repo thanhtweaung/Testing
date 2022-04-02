@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+
+    <script src="../JAVASCRIPT/app.js"></script>
+
+    <script>
+
+        let fruit = ["orange","mango","banana","apple","lemon","kewi","line"]
+        let mark = [40,30,60,90,33,19]
+
+
+        // map map
+
+        // let newArr = fruit.map(function(i,index){
+        //     console.log(index+1+ " -",i)
+        //     return i.length+"-"+i
+        // })
+
+        // let newArr =mark.map(function(i){
+        //     console.log(i);
+        //     return i>40?"Win":"Lose"
+        // })
+
+        // let newArr =shop.map(function(i){
+        //     console.log(i.title+"  -  "+i.price)
+        //     return i.title+"  -  "+i.price
+        // })
+
+        // filter filter
+        
+        // let newArr=fruit.filter(function(i){
+        //     console.log(i)
+        //     return i.length>=6
+        // })
+
+        // let newArr=mark.filter(function(i){
+        //     console.log(i)
+        //     return i>=60
+        // })
+
+        // let newArr=shop.filter(function(i){
+        //     // console.log(i.price)
+        //     return i.price>150
+        // })
+        
+        // find find
+
+        // let newArr = shop.find(function(i){
+        //     console.log(i)
+        //     return i.id==3
+        // })
+        
+        // let newArr = fruit.find(function(i){
+        //     console.log(i)
+        //     return i.length==4
+        // })
+
+            // reduce reduce
+
+            // let newArr = shop.reduce(function(p,c){
+            //     console.log(p+"  +  "+c.price)
+            //     return p+c.price
+            // },0)
+
+            // let newArr = mark.reduce(function(p,c){
+            //     console.log(p+"+"+c)
+            //     return p+c
+            // },0)
+
+            // let newArr = fruit.reduce(function(p,c){
+            //     console.log(p+" + "+c)
+            //     return p+c
+            // },"")
+
+            // let newArr = mark.some(function(i){
+            //     console.log(i)
+            //     return i<50
+            // })
+
+            // let newArr = mark.every(function(i){
+            //     console.log(i)
+            //     return i>10
+            // })
+
+            let newArr = fruit.filter(function(i){
+                console.log(i)
+                return i.length>4
+            }).join("-")
+
+        console.log(newArr)
+
+    </script>
+</body>
+</html>

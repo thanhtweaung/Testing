@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Operator</title>
+</head>
+<body>
+    <script>
+        // (&&) အကုန်မှန်၊ (||) တစ်ခုမဟုတ်တစ်ခုမှန်၊ (!) ဆန့်ကျင်ဘက်
+        
+        let case1 = 70;
+        let case2 = 70;
+
+        // && ကိုသုံးရင် Condition အကုန်မှန် ရမယ်။
+        if( case1 > 60 &&  case2 > 60){
+            console.log(`၀င်ခွင့်ရမယ်။`)
+        }
+
+        // vote ပေးနိုင်ဖို့ အသက် ၁၈ နှစ် နှင့် အထက် လည်းဖြစ်ရမယ်။ နိုင်ငံသားလည်းဖြစ်ရမယ်။
+        let age = 18;
+        let reagion = false;
+        if( age>=18 && reagion ==true){
+            console.log(`vote ပေးရသည်။`)
+        }else{
+            console.log(`vote ပေးမရ။`)
+        }
+        
+        // MMSIT ကျောက်မြောင်းကို မြေနီကုန်းမှလာဖို့ YBS 65 စီးလည်းရောက်တယ်။ 20 စီးလည်းရောက်တယ်။ အခြားကားများမရောက်
+        let busNo = 65;
+        // ||(or) ကိုသုံးရင် တစ်ခုမှန်ရင်ရသည်။
+        if(busNo==65 || busNo==20){
+            console.log(`YBS ${busNo} ရောက်တယ်`)
+        }else{
+            console.log(`YBS ${busNo} မရောက်ပါ။`)
+        }
+
+        if(!true){
+            console.log("This is true")
+        }else{
+            console.log("This is false")
+        }
+
+        function checkResult(mark){
+            if(mark<40){
+            console.log(`ကျတယ်။`)
+        }else if(mark>=80){
+            console.log(`ဂုဏ်ထူးထွက်တယ်။`)
+        }else{
+            console.log(`အောင်တယ်။`)
+        }
+        }
+    </script>
+</body>
+</html>

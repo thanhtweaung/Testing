@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h1>Hee ee</h1>
+    <h1>GO Home</h1>
+    <h1>Go Garden</h1>
+
+    <script>
+        let h = document.querySelectorAll("h1")
+        let harr =[]
+       
+        let ul = document.createElement("ul")
+
+        h.forEach(function(i){
+           harr.push(i.innerHTML)
+        })
+
+        harr.forEach(function(i){
+            let li = document.createElement("li")
+            let text = document.createTextNode(i)
+            li.appendChild(text)
+            ul.appendChild(li)
+        })
+        document.body.appendChild(ul)
+        
+    </script>
+</body>
+</html>
