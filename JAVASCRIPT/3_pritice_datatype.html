@@ -8,26 +8,65 @@
 </head>
 <body>
     <script>
-        let name = "Mg Mag";
+        //အသက် ၁၅ နှစ်ရှိပြီဖြစ်တဲ့ မောင်မောင် ဟာ ထား၀ယ် မှာနေထိုင်ပါတယ်။
+        let name = "Mg Mg";
         let age = 15;
-        let place ="Dawei" ;
-        let money = 150;
-        let price = 100;
-        
-        money = money-price;
-        let bag = ["mm","eng","math","bio"]
-        let pan = null
-        let isHisfriend = true
-        let mmg = false
+        let place = "Dawei"
 
-        let mgmgIngo ={
-            name:name,
-            age:age,
-            live:place,
-            isHesmoke:mmg,
-            book:bag
-            
+        // မောင်မောင်မှာ ငွေ ၂၀၀ ရှိပြီး လိမ္မော်သီး တစ်လုံး ၅၀ ဖိုး ၀ယ်စားလိုက်ပါသည်။ ငွေမည်မျှ ကျန်မည်နည်း။
+        let money = 200;
+        let fruit = "Orange";
+        let Fruitprice = 50;
+        money = money-Fruitprice;
+
+        // မောင်မောင် ကျောင်းသွားရန် လွယ်အိတိထဲသို့ မြန်မာစာအုပ်၊ အဂ်လိပ်စာအုပ်၊ Bio စာအုပ်များထည့်သွားသည်။ ဘောပင်များယူဆောင်ရန်မေ့သွားသည်။
+        let bag =["Myanmar","English","Bio"];
+        let pan = null;
+
+        // မောင်မောင်သူငယ်ချင်းများဆေးလိပ်သောက်တတ်ပေမဲ့ မောင်မောင် မသောက်တတ်ပါ။
+        let Hesmoke = false;
+        let hisFriendsmoke = true;
+
+        // မောင်မောင် Infomation အားလုံးစုပေးပါ။
+        let mgmgInfo ={
+            name,
+            place,
+            money,
+            book : bag,
+            Hesmoke,
         }
+        
+        // ကျော်ကျော်၊ဇော်ဇော်၊ မြမြ တို့ကိုလည်းတည်ဆောက်ပေးပါ။
+        let kyawkyawInfo={
+            name :"Kyaw Kyaw",
+            age,
+            place,
+            money,
+            book  : bag,
+            Hesmoke
+        }
+
+        let zawzawInfo={
+            name :"Zaw Zaw",
+            age,
+            place : "Kanbauk",
+            money,
+            book  : bag,
+            Hesmoke : true
+        }
+
+        //ကျောင်းသားများအကြောင်းစုပေးပါ။
+        let student = [
+            mgmgInfo,
+            kyawkyawInfo,
+            zawzawInfo,
+           {
+               name :"Mya Mya",
+               age : 23,
+               place : "Kanbauk"
+           }
+        ]
+
 
     </script>
     <script src="app.js"></script>

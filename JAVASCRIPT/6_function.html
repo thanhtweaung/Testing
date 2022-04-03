@@ -17,7 +17,11 @@
         //function expression//
         let run = function(){
             return "This is run"
-        }
+        };
+        //IIFe
+        (function(){
+            console.log("I am iife")
+        })()
         console.log(run())
         console.log(test())
 

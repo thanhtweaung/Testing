@@ -57,6 +57,55 @@
         // function toNum(x){
         //     return (x.replace(",",""))
         // }
+        let record=[]
+        let index =0;
+
+        function areaCal(width,breadth){
+            let calculate = width*breadth
+            let result = calculate+" "+"sqft"
+            record[index]={
+                width,
+                breadth,
+                result,
+            }
+            index++
+            
+        }
+
+        function toMMK(exchange,currency){
+            return toNum(data.rates[exchange])*currency +" "+"MMK";
+        }
+        function fromMMK(mmk,currency){
+            return    mmk/toNum(data.rates[currency]) +" "+`${currency}`;
+        }
+        function toNum(x){
+            return x.replace(",","")
+        }
+        //သစ်သီး၀◌ယ်မယ် ကျသင့်ငွေရယ် အခွန် ၅% ရယ် စုစုပေါင်းရယ်ထုတ်ပေးရပါမယ်။
+
+        let fruitPrice ={
+            orange : 200,
+            apple : 300,
+            banana : 400
+        };
+        function Calctax(amount,percantage=5){
+            return (amount*percantage)/100;
+        }
+        function cost(quentity,fruit){
+            let calc = quentity*fruitPrice[fruit]
+            let result = calc+"-"+"MMk"
+            return {
+                fruit,
+                fruitPrice : fruitPrice[fruit],
+                quentity,
+                result,
+                tax : Calctax(calc),
+               total : calc + Calctax(calc)
+            }
+        }
+
+
+        
     </script>
     
 </body>
