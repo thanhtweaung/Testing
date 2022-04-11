@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritical</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 20px;
+        }
+        .output{
+            width: 350px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 0 10px;
+        }
+        .output .result{
+            height: 25px;
+            display: flex;
+            align-items: center;
+        }
+        .output p{
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        .output button{
+            width: 59px;
+            height: 25px;
+        }
+        .calculate{
+            width: 350px;
+            height: 25px;
+            margin-bottom: 10px;
+        }
+        input{
+            width: 110px;
+            height: 25px;
+            border: 1px solid black;
+            padding: 3px 5px;
+        }
+        input:focus{
+            outline: none;
+        }
+        .calculate button{
+            width: 122px;
+            height: 100%;
+        }
+        #list{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Area Calculator</h1>
+    <div class="output">
+       <div class="result">
+        <p>Result:</p>
+        <p id="result"></p>
+       </div>
+       <div class="btn">
+        <button onclick="store()">Store</button>
+        <button onclick="ac()">Clear</button>
+       </div>
+    </div>
+    <div class="calculate">
+        <input type="number" id="width" placeholder="width">
+        <input type="number" id="breadth" placeholder="breadth">
+        <button onclick="calc()">Calculate</button>
+    </div>
+    <ul id="list">
+    </ul>
+    <script>
+        let result = document.getElementById("result")
+        let width = document.getElementById("width")
+        let breadth = document.getElementById("breadth")
+        let list = document.getElementById("list")
+        function calc(){
+            if(width.value>0 & breadth.value>0){
+                let current = width.value*breadth.value;
+            result.innerHTML = current+"   " + "sqft"
+            width.value=""
+            breadth.value=""
+            }else{
+                alert("value empty")
+            }
+           
+        }
+        function store(){
+            let current = result.innerHTML;
+            if(current.length>0){
+                list.innerHTML +=`<li>${current} <button onclick=del()>Delete</button></li>`
+                result.innerHTML=""
+            }else{
+                alert("Result Empty")
+            }
+        };
+        function ac(){
+            result.innerHTML=""
+            console.log("hello")
+        }
+        function del(){
+            console.log("hello")
+        }
+    </script>
+</body>
+</html>
